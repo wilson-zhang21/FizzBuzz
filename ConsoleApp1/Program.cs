@@ -6,23 +6,27 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            
+            
             for(int i = 1; i <= 100; i++ )
             {
-                if (i % 3 == 0 && i % 5 == 0)
+                string res = "";
+                if (i % 3 == 0 )
                 {
-                    Console.Out.WriteLine("FizzBuzz");
+                    res = res + "Fizz";
                 }
-                else if (i % 3 == 0)
+                if (i % 5 == 0)
                 {
-                    Console.Out.WriteLine("Fizz");
+                    res = res + "Buzz";
                 }
-                else if (i % 5 == 0)
+                
+                if (res == "")
                 {
-                    Console.Out.WriteLine("Buzz");
+                    Console.Out.WriteLine(i);
                 }
                 else
                 {
-                    Console.Out.WriteLine(i);
+                    Console.Out.WriteLine(res);
                 }
             }
         }
