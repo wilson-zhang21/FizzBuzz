@@ -30,10 +30,7 @@ namespace ConsoleApp1
                     result.Add("Bang");
                 }
 
-                if (i % 11 == 0)
-                {
-                    result.Add("Bong");
-                }
+
 
                 if (i % 13 == 0)
                 {
@@ -52,7 +49,13 @@ namespace ConsoleApp1
                 {
                     result.Reverse();
                 }
-
+               
+                if (i % 11 == 0)
+                {
+                    result.Clear();
+                    result.TrimExcess();
+                    result.Add("Bong");
+                }
 
                 if (result.Any())
                 {
